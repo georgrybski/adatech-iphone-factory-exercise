@@ -1,6 +1,5 @@
 package br.com.ada.georg.oop2.iphonefactoryexercise;
 
-import br.com.ada.georg.oop2.iphonefactoryexercise.factories.IPhone9Factory;
 import br.com.ada.georg.oop2.iphonefactoryexercise.factories.IPhoneFactory;
 
 import java.util.HashMap;
