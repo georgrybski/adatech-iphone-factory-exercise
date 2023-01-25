@@ -18,7 +18,7 @@ public enum TypeIPhoneEnum {
         MODEL_NAME = modelName;
     }
 
-    public IPhoneFactory getFACTORY() {
+    public IPhoneFactory getFactory() {
         return FACTORY;
     }
 
