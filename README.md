@@ -1,6 +1,6 @@
 [English](README.md) | [Português](README.pt-br.md)
 
-## Bookstore Exercise
+## IPhone Factory Exercise
 
 This project is a bookstore application developed using Java as part of an
 [intensive training program](https://polotech.americanas.io/) sponsored by
