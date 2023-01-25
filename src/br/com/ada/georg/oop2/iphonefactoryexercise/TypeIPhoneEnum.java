@@ -4,6 +4,7 @@ import br.com.ada.georg.oop2.iphonefactoryexercise.factories.IPhone13MiniFactory
 import br.com.ada.georg.oop2.iphonefactoryexercise.factories.IPhone9Factory;
 import br.com.ada.georg.oop2.iphonefactoryexercise.factories.IPhoneFactory;
 import br.com.ada.georg.oop2.iphonefactoryexercise.factories.IPhoneXFactory;
+import br.com.ada.georg.oop2.iphonefactoryexercise.iphones.IPhone;
 
 public enum TypeIPhoneEnum {
     IPHONE_9(new IPhone9Factory(), "iphone9"),
@@ -16,6 +17,10 @@ public enum TypeIPhoneEnum {
     TypeIPhoneEnum(IPhoneFactory iPhoneFactory, String modelName) {
         FACTORY = iPhoneFactory;
         MODEL_NAME = modelName;
+    }
+
+    public IPhone create() {
+        return this.getFactory().createIphone();
     }
 
     public IPhoneFactory getFactory() {

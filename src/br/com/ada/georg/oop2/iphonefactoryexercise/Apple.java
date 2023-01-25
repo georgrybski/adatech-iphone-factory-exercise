@@ -9,7 +9,7 @@ public class Apple {
     private final FactoryHashmapInitializer factoryHashmapInitializer = new FactoryHashmapInitializer();
     private final HashMap<String, IPhoneFactory> PRODUCT_NAME_FACTORY_HASHMAP = factoryHashmapInitializer.createProductNameFactoryHashMap();
 
-    public IPhone deliverIphone(String requestedModel) {
+    public IPhone deliverIPhone(String requestedModel) {
         IPhone iphone = null;
         if (modelInProduction(requestedModel)) {
             iphone = assembleIphone(requestedModel);
@@ -19,6 +19,9 @@ public class Apple {
 
     private IPhone assembleIphone(String model) {
         return PRODUCT_NAME_FACTORY_HASHMAP.get(model).createIphone();
+    }
+    public IPhone deliverIPhone(TypeIPhoneEnum iPhoneType) {
+        return iPhoneType.create();
     }
 
     private boolean modelInProduction(String requestedModel) {
