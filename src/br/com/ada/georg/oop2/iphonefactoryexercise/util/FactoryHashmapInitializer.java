@@ -1,5 +1,6 @@
-package br.com.ada.georg.oop2.iphonefactoryexercise;
+package br.com.ada.georg.oop2.iphonefactoryexercise.util;
 
+import br.com.ada.georg.oop2.iphonefactoryexercise.TypeIPhoneEnum;
 import br.com.ada.georg.oop2.iphonefactoryexercise.factories.IPhoneFactory;
 
 import java.util.HashMap;
