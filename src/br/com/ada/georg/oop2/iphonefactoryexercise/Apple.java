@@ -11,7 +11,7 @@ public class Apple {
     private final HashMap<String, IPhoneFactory> PRODUCT_NAME_FACTORY_HASHMAP = factoryHashmapInitializer.createProductNameFactoryHashMap();
 
     public IPhone deliverIPhone(TypeIPhoneEnum iPhoneType) {
-        return iPhoneType.create();
+        return iPhoneType.getFactory().createIphone();
     }
 
     public IPhone deliverIPhone(String requestedModel) {

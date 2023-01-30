@@ -19,10 +19,6 @@ public enum TypeIPhoneEnum {
         MODEL_NAME = modelName;
     }
 
-    public IPhone create() {
-        return this.getFactory().createIphone();
-    }
-
     public IPhoneFactory getFactory() {
         return FACTORY;
     }
